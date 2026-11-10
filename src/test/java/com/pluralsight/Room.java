@@ -27,7 +27,7 @@ public class Room {
     }
 
     public boolean checkOut() {
-        if (isOccupied()) {
+        if (!isOccupied()) {
             System.out.println("room is checked check out\n");
             return true;
         }
@@ -36,8 +36,7 @@ public class Room {
     }
 
     public void cleanRoom() {
-        if (isOccupied() == false) {
-            dirty = false;
+        if (isAvailable()) {
             System.out.println("room is clean");
         } else {
             System.out.println("room is not clean");
