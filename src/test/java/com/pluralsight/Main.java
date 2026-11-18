@@ -3,7 +3,7 @@ package com.pluralsight;
 public class Main {
     public static void main(String[] args) {
 
-        Hotel hotel = new Hotel("Grand Hotel", 10, 50);
+        var hotel = new Hotel("Grand Hotel", 10, 50);
 
         System.out.println("================================================");
         System.out.printf("          🏨 HOTEL MANAGEMENT SYSTEM 🏨%n");
@@ -52,7 +52,6 @@ public class Main {
                 hotel.getName());
         System.out.println("================================================");
     }
-
 
 
     //Creates new object for room.

@@ -29,7 +29,7 @@ public class Hotel {
         if (suites) {
             if (getAvailableSuites() >= roomCount) {
                 this.bookedSuites += roomCount;
-                return true;
+                //return true;
             }
         } else {//if they dont chose suite
 
@@ -51,7 +51,6 @@ public class Hotel {
         return getNumberOfRoom() - getBookedBasicRooms();
     }
 
-
     public String getName() {
         return name;
     }
@@ -71,5 +70,4 @@ public class Hotel {
     public int getBookedSuites() {
         return bookedSuites;
     }
-
 }

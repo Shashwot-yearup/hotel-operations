@@ -70,6 +70,8 @@ public class Employee {
             return 0;
         }
     }
+
+
     // Display employee information
     public void displayEmployeeInfo() {
 
