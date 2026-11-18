@@ -7,7 +7,8 @@ public class Employee {
     private double payRate;
     private double hoursWork;
 
-    //
+    private int punchIntime;
+    //Constructor
     public Employee(String name, String department, double payRate, double hoursWork) {
         this.name = name;
         this.department = department;
@@ -69,6 +70,15 @@ public class Employee {
         else {
             return 0;
         }
+    }
+
+    //Method to get punchIn time
+    public void punchIn(int time){
+        this.punchIntime = time;
+    }
+
+    public void punchOut(int time){
+        int currentHourWorked = time - this.punchIntime;
     }
 
 
